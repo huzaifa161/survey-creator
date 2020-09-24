@@ -1,0 +1,27 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-family: 'Lato',sans-serif;
+    height: 100vh;
+}
+#root{
+    height: 100vh;
+    color: black;
+}
+.App{
+    height: 100%;
+}
+input:focus{
+    outline: none;
+}
+
+.heading__secondary{
+    margin: 16px;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+.SurveyReview{
+    padding: 5px;
+    width: 600px;
+    margin-top: 16px;
+    box-shadow:0 0 4px rgba(0,0,0,.25);
+}
+.SurveyReviewQuestion{
+    color:#1565c0;
+    font-weight: 600;
+}
+
+.SurveyReviewQuestionOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 18px;
+    padding: 5px;
+    color: #1e88e5;
+    border-bottom: 1px solid #E0E0E0;
+
+}
+
+.SurveyReviewQuestionRemoveOption {
+    border:2px solid #E0E0E0;
+    padding:4px 12px;
+    color:red;
+    font-weight: 700;    
+    transition: all .2s ease-in;
+}
+.SurveyReviewQuestionRemoveOption:hover {
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+    transform: translateY(-1px);
+    cursor: pointer;
+}

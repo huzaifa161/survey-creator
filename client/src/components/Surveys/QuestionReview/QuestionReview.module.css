@@ -1,0 +1,56 @@
+.QuestionReviewDetails{
+    color:#1565c0;
+    font-weight: 600;
+    margin: 12px 0;
+    box-shadow:0 0 3px rgba(0,0,0,.26);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuestionReviewDetailsBar{
+    width: 75%;
+}
+.QuestionReviewOptionItem{
+    display: block;
+    margin: 6px 16px;
+    color: #1976d2;
+    font-weight: 500;
+}
+.RadioOptionType{
+    height: 20px;
+    width:20px;
+    border:1px solid black;
+}
+.CheckOptionType{
+    height: 20px;
+    width:20px;
+    border:1px solid black;
+}
+
+.QuestionReviewButtonGroup{
+    display: flex;
+}
+.Button{
+    align-self: flex-start;
+    padding:8px 20px;
+    max-width: 80px;
+    border:none;
+    margin-right: 12px;
+
+}
+.Button:hover{
+    cursor:pointer;
+
+}
+.EditButton{
+    background-color:#ffb300;
+    color:white;
+}
+.DeleteButton{
+    background-color: red;
+    color:white;
+}
+.Icon{
+    font-size: 16px;
+}

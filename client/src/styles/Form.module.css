@@ -1,0 +1,175 @@
+.Form{
+  width: 420px;
+  box-shadow: 0 0 3px  rgba(0,0,0,.25);
+  padding: 20px;
+}
+.FormCenter{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    overflow:auto;
+}
+.FormLarge{
+    width: 600px;
+}
+.FormHeading{
+    text-align: center;
+    margin: 20px;
+}
+.FormHeadingSecondary{
+    text-align: center;
+    margin: 4px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.FormControl{
+    width: 100%;
+    margin: 20px 0;
+}
+.FormControlRow{
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin: 20px 0;
+    
+}
+.FormControlRow .FormControl{
+    margin: 0;
+} 
+.FormInput{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border:1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.FormInput:focus {
+    background-color: white;
+    border:1px solid #1565c0;
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+.FormInput:placeholder-shown+.FormLabel {
+    background-color: transparent;
+    transform: translate(5px, -25px);
+    opacity: 0;
+}
+.FormTextarea{
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border:1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.FormTextarea:focus {
+    background-color: white;
+    outline: none;
+}
+.FormTextarea + .FormLabel {
+    transform: translate(5px, -130px);
+    opacity: 1;
+}
+.FormTextarea:placeholder-shown+.FormLabel {
+    background-color: transparent;
+    transform: translate(5px, -110px);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.FormLabel{
+    display: inline-block;
+    opacity: 1;
+    transform: translate(5px   ,-55px);
+    z-index: 100;
+    padding:0 8px;
+    color:#1565c0;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.FormButton{
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 18px;
+    background-image: linear-gradient(to right bottom, #1565c0, #1976d2, #1976d2, #1565c0);
+    border: none;
+    color:white;
+    border-radius: 4px;
+    transition: all .2s ease-in;
+}
+.FormButtonSmall {
+    max-width: 150px;
+    max-height: 45px;
+    margin-left: 20px;
+}
+.FormButton:hover,.FormButtonSmall:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+.FormButton:focus,
+.FormButtonSmall:focus {
+    outline: none;
+}
+.FormError{
+    font-size: 14px;
+    color: red;
+    transform: translate(8px,-15px);
+}
+
+.FormDiv{
+    margin-right:8px;
+    width: 32%;
+    border:1px solid #E0E0E0;
+    text-align: center;
+    color:#1976d2;
+    font-weight: 500;
+    transition: all .2s ease-in ;
+}
+.FormDivItem{
+    padding:8px;
+}
+.FormDivCheck{
+    background-color: #1976d2;
+    color:white;
+}
+.FormDiv:nth-child(3) {
+    margin-right: 0;
+}
+.FormDiv:hover {
+    cursor: pointer;
+    transform:translateY(-1px);
+    box-shadow: 0 0 2px rgba(0,0,0,.25);
+}   
+@media screen and (max-width: 480px) {
+    .Form {
+        width: 100%;
+        box-shadow:none;
+        padding: 20px 0;
+    }
+    .FormControl {
+        padding: 16px 8px;
+    }
+    .FormInput {
+        padding: 12px;
+        font-size: 18px;
+    }
+    .FormLabel {
+        transform: translate(5px ,-55px);
+    }
+    .FormButton{
+        padding: 12px;
+        font-size: 20px;
+    }
+}
+
+.FormSuccessCheck{
+}

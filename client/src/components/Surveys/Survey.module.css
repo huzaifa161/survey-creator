@@ -1,0 +1,34 @@
+.SurveyItem{
+    width: 600px;
+    margin: 40px auto;
+    padding: 16px;
+    border:1px solid #E0E0E0;
+}
+.SurveyItem:hover{
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+}
+.SurveyItemTitleBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.SurveyItemTitle{
+    font-weight: 700;
+    font-size: 22px;
+}
+.SurveyItemDescBar{
+    display: flex;
+    flex-direction: column;
+}
+.SurveyItemDesc{
+    padding: 12px 4px;
+    color:rgba(0,0,0,.7);
+}
+.SurveyButton {
+    padding: 8px 20px;
+    align-self:flex-end;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 20px;
+    
+}

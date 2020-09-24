@@ -1,0 +1,106 @@
+.Form{
+  width: 450px;
+  margin: auto;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%); 
+  box-shadow: 0 0 4px rgba(0,0,0,.25);
+  padding: 20px;
+}
+.FormHeading{
+    text-align: center;
+    margin: 20px;
+}
+.FormControl{
+    width: 100%;
+    padding: 8px;
+    position: relative;
+}
+.FormInput{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border:1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.FormInput:focus {
+    background-color: white;
+}
+.FormInput:placeholder-shown+.FormLabel {
+    background-color: transparent;
+    transform: translate(5px, -25px);
+    opacity: 0;
+}
+.FormTextarea{
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border:1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.FormTextarea:focus {
+    background-color: white;
+    outline: none;
+}
+.FormTextarea + .FormLabel {
+    transform: translate(5px, -130px);
+}
+.FormTextarea:placeholder-shown+.FormLabel {
+    background-color: transparent;
+    transform: translate(5px, -105px);
+    opacity: 0;
+}
+
+.FormLabel{
+    display: inline-block;
+    opacity: 1;
+    transform: translate(5px   ,-50px);
+    z-index: 100;
+    padding:0 8px;
+    color:#1565c0;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.FormButton{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-image: linear-gradient(to right bottom, #1565c0, #1976d2, #1976d2, #1565c0);
+    border: none;
+    color:white;
+    border-radius: 4px;
+}
+.FormError{
+    font-size: 14px;
+    position: absolute;
+    left: 15px;
+    color: red;
+}
+
+@media screen and (max-width: 480px) {
+    .Form {
+        width: 100%;
+        box-shadow:none;
+        padding: 20px 0;
+    }
+    .FormControl {
+        padding: 16px 8px;
+    }
+    .FormInput {
+        padding: 12px;
+        font-size: 18px;
+    }
+    .FormLabel {
+        transform: translate(5px ,-55px);
+    }
+    .FormButton{
+        padding: 12px;
+        font-size: 20px;
+    }
+}
